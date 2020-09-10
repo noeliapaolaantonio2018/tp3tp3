@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvdolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dolar" />
+
+    <EditText
+        android:id="@+id/etdolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tveuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etdolar"
+        android:text="Euro" />
+
+    <EditText
+        android:id="@+id/eteuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tveuro"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/rgradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eteuro">
+
+        <RadioButton
+            android:id="@+id/rbeuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dolar a Euro" />
+
+        <RadioButton
+            android:id="@+id/rbdolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euros a Dolar" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvcambio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgradio"
+        android:text="Cambiar a..." />
+
+    <EditText
+        android:id="@+id/etcambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvcambio"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnconbertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etcambio"
+        android:text="Convertir" />
+
+</RelativeLayout>
